@@ -1,38 +1,38 @@
-// Cada lista aporta una parte del mensaje; no guardamos misiones completas.
+// Each list provides one part of the message instead of complete missions.
 const destinations = ['Korriban', 'Tython', 'Coruscant', 'Dromund Kaas', 'Alderaan'];
 const objectives = [
-  'recuperar un holocrón',
-  'rescatar a un explorador',
-  'investigar una señal misteriosa',
-  'proteger un archivo antiguo',
-  'localizar un artefacto perdido'
+  'recover a holocron',
+  'rescue an explorer',
+  'investigate a mysterious signal',
+  'protect an ancient archive',
+  'locate a lost artifact'
 ];
 const conditions = [
-  'sin alertar a las patrullas',
-  'antes del amanecer',
-  'sin utilizar la Fuerza',
-  'con ayuda de un droide',
-  'manteniendo tu identidad en secreto'
+  'without alerting the patrols',
+  'before dawn',
+  'without using the Force',
+  'with help from a droid',
+  'while keeping your identity secret'
 ];
 
 function pickRandom(items) {
-  // Math.random() devuelve un número entre 0 (incluido) y 1 (excluido).
+  // Math.random() returns a number from 0 (inclusive) to 1 (exclusive).
   const index = Math.floor(Math.random() * items.length);
   return items[index];
 }
 
 function generateMission() {
-  // Hacemos una selección independiente para cada componente.
+  // Make an independent random selection for each component.
   const destination = pickRandom(destinations);
   const objective = pickRandom(objectives);
   const condition = pickRandom(conditions);
-  return `Tu misión en ${destination} es ${objective} ${condition}.`;
+  return `Your mission on ${destination} is to ${objective} ${condition}.`;
 }
 
-// Node dispone de module y require; el navegador no necesita estas variables.
+// Node provides module and require; the browser does not need these variables.
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { destinations, objectives, conditions, pickRandom, generateMission };
-  // Imprimir solo al ejecutar "node script.js", no al importar el archivo.
+  // Print only when running "node script.js", not when importing this file.
   if (require.main === module) {
     console.log(generateMission());
   }

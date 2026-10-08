@@ -1,4 +1,4 @@
-// Los controles de la página están separados del generador reutilizable.
+// Keep the page controls separate from the reusable mission generator.
 const missionMessage = document.getElementById('mission-message');
 const generateButton = document.getElementById('generate-mission');
 
