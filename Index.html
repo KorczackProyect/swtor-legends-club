@@ -15,6 +15,7 @@
         <nav>
         <ul>
             <li><a href="#mission">Mission</a></li>
+            <li><a href="#mission-generator" lang="es">Generador</a></li>
             <li><a href="#activities">Activities</a></li>
             <li><a href="#meetings">Meetings</a></li>
         </ul>
@@ -36,6 +37,13 @@
         </p>
     </section>
 
+    <section id="mission-generator" class="mission-generator" lang="es" aria-labelledby="generator-title">
+        <h2 id="generator-title">Misiones de la Antigua República</h2>
+        <p>Descubre tu próximo destino, objetivo y condición especial.</p>
+        <p id="mission-message" class="mission-message" role="status" aria-live="polite" aria-atomic="true">Preparando tu misión…</p>
+        <button id="generate-mission" type="button" disabled>Generar otra misión</button>
+        <noscript><p>Activa JavaScript para generar misiones en esta página.</p></noscript>
+    </section>
     <section id="activities" class="activities">
         <h2>Club Activities</h2>
 
@@ -66,5 +74,7 @@
         <p>© SWTOR Legends Club</p>
     </footer>
 
+    <script src="./script.js" defer></script>
+    <script src="./browser.js" defer></script>
     </body>
 </html>

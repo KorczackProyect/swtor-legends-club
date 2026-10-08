@@ -219,3 +219,44 @@ footer {
     padding: 1.5rem;
   }
 }
+/* Generador: el texto se adapta a pantallas pequeñas sin un ancho fijo. */
+.mission-generator {
+  width: 90%;
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  background: rgba(15, 10, 16, 0.95);
+  border: 1px solid #ff7777;
+  border-radius: 8px;
+}
+.mission-generator h2 { color: #ff9999; }
+.mission-generator p { line-height: 1.7; }
+.mission-message {
+  min-height: 5rem;
+  padding: 1.25rem;
+  background: rgba(100, 0, 0, 0.4);
+  border-radius: 6px;
+  font-size: 1.2rem;
+  overflow-wrap: anywhere;
+}
+.mission-generator button {
+  max-width: 100%;
+  min-height: 44px;
+  padding: 0.9rem 1.4rem;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: #ff9999;
+  color: #1b0808;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+.mission-generator button:hover { background: #ffbaba; }
+.mission-generator button:focus-visible, nav a:focus-visible {
+  outline: 3px solid #ffe58a;
+  outline-offset: 5px;
+}
+.mission-generator button:disabled { opacity: 0.6; cursor: default; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
