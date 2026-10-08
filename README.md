@@ -27,7 +27,7 @@ No necesitas npm install ni dependencias externas.
 
 ## Versión web
 
-Abre Index.html en tu navegador desde el explorador de archivos. También puedes
+Abre index.html en tu navegador desde el explorador de archivos. También puedes
 usar la extensión opcional Live Server de VSCode. No hace falta un servidor:
 los scripts clásicos funcionan al abrir el archivo directamente.
 
@@ -37,7 +37,7 @@ El mensaje es una región de estado para tecnologías de asistencia.
 
 ## Estructura
 
-- Index.html: página del club y sección accesible del generador.
+- index.html: página del club y sección accesible del generador.
 - Resources/Index.css: estilos del club y del generador, adaptables a móvil.
 - Resources/IMG/peakpx.jpg: fondo original.
 - script.js: datos, selección aleatoria y construcción del mensaje; también
@@ -52,5 +52,5 @@ Puedes revisarlo desde la terminal con:
     git log --oneline
     git status
 
-No se ha publicado en GitHub. La entrega remota y las tareas administrativas del
-tablero de Codecademy se realizan aparte.
+Repositorio: https://github.com/KorczackProyect/swtor-legends-club
+Web: https://korczackproyect.github.io/swtor-legends-club/
